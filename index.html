@@ -119,12 +119,16 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
             box-sizing: border-box;
         }
+        .option img {
+          width: 64px;
+          height: 64px;
+        }
         .option h3 {
             color: #007acc; /* Cor do título */
             margin-bottom: 10px;
         }
         .option p {
-            font-size: 14px; /* Tamanho da fonte */
+            font-size: 16px; /* Tamanho da fonte */
         }
 
         /* avaliações */
@@ -132,6 +136,11 @@
         .swiper {
             width: 100%;
             padding: 20px 0;
+        }
+        .swiper h2 {
+            text-align: center; /* Centraliza o título */
+            color: #007acc;
+            margin: 0px 0px 20px 0px;
         }
         .swiper-slide {
             display: flex;
@@ -148,19 +157,41 @@
             text-align: center;
             width: 90%; /* Largura responsiva padrão */
             max-width: 330px; /* Limita a largura máxima */
+            max-height: 250px;
+        }
+        .review-card p {
+          overflow-y: auto;
         }
         .review-logo {
             margin-bottom: 15px;
         }
         .review-logo img {
-            width: 100px;
+            width: 40px;
+            height: 40px;
         }
         .review-author {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
             font-weight: bold;
             margin-top: 10px;
         }
+        .review-author img {
+          margin-right: 20px;
+          width: 60px;
+          height: 60px;
+        }
+        .google-rating {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+          margin-top: 20px;
+        }
         .review-rating {
             color: #ffc107;
+            font-size: 26px;
         }
 
         /* Media Queries para dispositivos móveis */
@@ -180,7 +211,7 @@
     <div class="content">
         <!-- Seção principal com título e botão de chamada -->
         <div class="main-header">
-            <h1>ESTÁ PROCURANDO UMA EMPRESA QUE PRESTE SERVIÇOS DE AR-CONDICIONADO EM TELÉMACO BORBA?</h1>
+            <h1>ESTÁ PROCURANDO UMA EMPRESA QUE PRESTE SERVIÇOS DE AR-CONDICIONADO EM TELÊMACO BORBA?</h1>
             <h2>Então encontrou... Nós podemos te ajudar!</h2>
             <a href="#" class="cta-button">SOLICITAR UMA VISITA DO TÉCNICO</a>
         </div>
@@ -203,14 +234,17 @@
             <h2>Por Que Escolher Nossos Serviços?</h2>
             <div class="options">
                 <div class="option">
+                    <img src="assets/icons/profissionais qualificados.svg" alt="">
                     <h3>Profissionais Qualificados</h3>
                     <p>Nossa equipe é composta por técnicos treinados e capacitados para lidar com qualquer problema que seu equipamento possa apresentar, garantindo soluções eficazes e rápidas.</p>
                 </div>
                 <div class="option">
+                    <img src="assets/icons/atendimento personalizado.svg" alt="">
                     <h3>Atendimento Personalizado</h3>
                     <p>Entendemos que cada cliente possui necessidades específicas. Por isso, oferecemos um atendimento personalizado, buscando sempre a melhor solução.</p>
                 </div>
                 <div class="option">
+                    <img src="assets/icons/preço justo.svg" alt="">
                     <h3>Preço Justo</h3>
                     <p>Oferecemos serviços de alta qualidade a preços competitivos, assegurando que você obtenha o melhor custo-benefício.</p>
                 </div>
@@ -218,49 +252,104 @@
         </div>
 
         <div class="swiper">
+            <h2>Nossa Reputação</h2>
             <div class="swiper-wrapper">
               <!-- Avaliação 1 -->
               <div class="swiper-slide">
                 <div class="review-card">
-                  <div class="review-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo">
+                  <div class="review-author">
+                    <img src="assets/images/profiles/claudio lima.png" alt="">
+                    <p>Claudio Lima</p>
                   </div>
-                  <p>"Ótimo atendimento! Super recomendo."</p>
-                  <div class="review-author">- João Silva</div>
-                  <div class="review-rating">★★★★★</div>
+                  <p>"Serviço excelente! Muito profissional, eficiente e atencioso. A qualidade do trabalho foi impecável, e o atendimento, sempre prestativo e cordial. Recomendo fortemente para quem procura um serviço confiável em Telêmaco Borba. Parabéns pelo trabalho!"</p>
+                  <div class="google-rating">
+                    <img src="assets/icons/google-icone.webp">
+                    <div class="review-rating">★★★★★</div>
+                  </div>
                 </div>
               </div>
               <!-- Avaliação 2 -->
               <div class="swiper-slide">
                 <div class="review-card">
-                  <div class="review-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo">
+                  <div class="review-author">
+                    <img src="assets/images/profiles/ana luiza bernardi.png" alt="">
+                    <p>Ana Luiza Bernardi</p>
                   </div>
-                  <p>"Serviço incrível e muito profissional!"</p>
-                  <div class="review-author">- Maria Oliveira</div>
-                  <div class="review-rating">★★★★☆</div>
+                  <p>"Profissional que nossa família indica de olhos fechados, pessoa prestativa, detalhista, estudiosa e extremante competente!"</p>
+                  <div class="google-rating">
+                    <img src="assets/icons/google-icone.webp">
+                    <div class="review-rating">★★★★★</div>
+                  </div>
                 </div>
               </div>
               <!-- Avaliação 3 -->
               <div class="swiper-slide">
                 <div class="review-card">
-                  <div class="review-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo">
+                  <div class="review-author">
+                    <img src="assets/images/profiles/disney oliveira mainardes.png" alt="">
+                    <p>Disney Mainardes</p>
                   </div>
-                  <p>"Excelente qualidade e atendimento rápido!"</p>
-                  <div class="review-author">- Pedro Santos</div>
-                  <div class="review-rating">★★★★★</div>
+                  <p>"Ótimo atendimento, com rapidez e eficiência."</p>
+                  <div class="google-rating">
+                    <img src="assets/icons/google-icone.webp">
+                    <div class="review-rating">★★★★★</div>
+                  </div>
                 </div>
               </div>
-              <!-- Adicione mais avaliações -->
+              <!-- Avaliação 4 -->
               <div class="swiper-slide">
                 <div class="review-card">
-                  <div class="review-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Logo">
+                  <div class="review-author">
+                    <img src="assets/images/profiles/renato carneiro.png" alt="">
+                    <p>Renato Carneiro</p>
                   </div>
-                  <p>"Excelente qualidade e atendimento rápido!"</p>
-                  <div class="review-author">- Roberto Carlos</div>
-                  <div class="review-rating">★★★★★</div>
+                  <p>"Atendimento ótimo, transparência em tudo que faz. Recomendo"</p>
+                  <div class="google-rating">
+                    <img src="assets/icons/google-icone.webp">
+                    <div class="review-rating">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Avaliação 5 -->
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-author">
+                    <img src="assets/images/profiles/alison calistro.png" alt="">
+                    <p>Alison Calistro</p>
+                  </div>
+                  <p>"Atendimento Excelente! Realizou a instalação do meu ar há uns 2 anos atrás e nesta semana fez a limpeza. Profissional super técnico e caprichoso. Recomendo"</p>
+                  <div class="google-rating">
+                    <img src="assets/icons/google-icone.webp">
+                    <div class="review-rating">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Avaliação 6 -->
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-author">
+                    <img src="assets/images/profiles/naia mesquita.png" alt="">
+                    <p>Naia Pípolo</p>
+                  </div>
+                  <p></p>
+                  <div class="google-rating">
+                    <img src="assets/icons/google-icone.webp">
+                    <div class="review-rating">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Avaliação 7 -->
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-author">
+                    <img src="assets/images/profiles/dalton agottani.png" alt="">
+                    <p>Dalton Agottani</p>
+                  </div>
+                  <p></p>
+                  <div class="google-rating">
+                    <img src="assets/icons/google-icone.webp">
+                    <div class="review-rating">★★★★★</div>
+                  </div>
                 </div>
               </div>
             </div>
