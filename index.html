@@ -136,6 +136,8 @@
         .swiper {
             width: 100%;
             padding: 20px 0;
+            border-bottom: solid 20px #007acc;
+            border-radius: 0px 0px 10px 10px;
         }
         .swiper h2 {
             text-align: center; /* Centraliza o título */
@@ -198,6 +200,86 @@
         @media (max-width: 768px) {
             .swiper-slide {
                 width: auto; /* Ajusta para 1 avaliação em telas menores */
+            }
+        }
+
+        /* footer */
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px auto;
+            width: 100%;
+        }
+
+        .contact-section {
+            background-color: #003f8c;
+            color: white;
+            padding: 20px;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .contact-section h4 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .contact-item img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        .contact-item span {
+            font-size: 18px;
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .location img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        .location span {
+            font-size: 16px;
+        }
+
+        .image-section {
+            width: auto;
+            height: auto;
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
             }
         }
     </style>
@@ -357,6 +439,31 @@
             <!-- Botões de navegação -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+          </div>
+
+          <div class="footer">
+            <div class="contact-section">
+                <h4>Fale Conosco</h4>
+                <p>Solicite agora mesmo a visita de um profissional e receba o suporte técnico que precisa.</p>
+    
+                <div class="contact-item">
+                    <img src="assets/icons/whatsapp-icone.png" alt="WhatsApp">
+                    <span>(42) 99838-1221</span>
+                </div>
+    
+                <div class="contact-item">
+                    <img src="assets/icons/instagram-icone.png" alt="Instagram">
+                    <span>@cleaner_air_tb</span>
+                </div>
+    
+                <div class="contact-item">
+                    <img src="assets/icons/endereço-icone.png" alt="Localização">
+                    <span>Telêmaco Borba/PR</span>
+                </div>
+            </div>
+            <div class="image-section">
+              <img src="assets/images/Logo footer.png" alt="Imagem de suporte">
+            </div>
           </div>
           
           <!-- Scripts do Swiper -->
