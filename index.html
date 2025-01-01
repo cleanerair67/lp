@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços de Ar-Condicionado em Telêmaco Borba</title>
+    <title>Serviços de Ar-Condicionado em Telêmaco Borba | Instalação, Manutenção e Limpeza</title>
+    <meta name="description" content="Oferecemos serviços especializados em instalação, manutenção e limpeza de ar-condicionado em Telêmaco Borba. Profissionais qualificados e preço justo. Entre em contato!">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
         /* Define o estilo geral da página */
@@ -21,6 +22,7 @@
             height: 90px;
             position: fixed;
             top: 0;
+            z-index: 10;
         }
 
         .background-cleaner-air {
@@ -55,7 +57,7 @@
             margin-bottom: 10px;
         }
         .main-header p {
-            color: #00c081; /* Cor do subtítulo */
+            color: #369ee3; /* Cor do subtítulo */
             font-weight: normal;
             font-size: 26px;
         }
@@ -67,7 +69,7 @@
             text-decoration: none; /* Remove sublinhado */
             border-radius: 5px; /* Borda arredondada */
             font-weight: bold;
-            font-size: 24px;
+            font-size: 28px;
             margin-top: 10px; /* Margem superior */
         }
 
@@ -78,6 +80,7 @@
             padding: 10px;
             border-bottom: solid 20px #007acc;
             border-radius: 0px 0px 10px 10px;
+            text-align: justify;
         }
         .services h3 {
             color: #007acc; /* Cor dos subtítulos */
@@ -92,8 +95,8 @@
             line-height: 1.6; /* Espaçamento entre linhas */
         }
         .services li h2 {
-            color: #007acc; /* Cor do texto em negrito */
-            font-size: 18px;
+            color: #003f8c; /* Cor do texto em negrito */
+            font-size: 22px;
         }
 
         /* Estiliza a seção "Por Que Escolher" */
@@ -105,7 +108,7 @@
         }
         .why-choose h2 {
             text-align: center; /* Centraliza o título */
-            color: #007acc;
+            color: #003f8c;
             margin: 0px 0px 20px 0px;
         }
         .why-choose .options {
@@ -128,7 +131,7 @@
           height: 64px;
         }
         .option h3 {
-            color: #007acc; /* Cor do título */
+            color: #003f8c; /* Cor do título */
             margin-bottom: 10px;
         }
         .option p {
@@ -154,7 +157,7 @@
         }
         .swiper h2 {
             text-align: center; /* Centraliza o título */
-            color: #007acc;
+            color: #003f8c;
             margin: 0px 0px 20px 0px;
         }
         .swiper-slide {
@@ -295,12 +298,46 @@
                 flex-direction: column;
             }
         }
+
+        .whatsapp-float {
+          position: fixed;
+          width: 64px;
+          height: 64px;
+          right: 20px;
+          bottom: 40px;
+          z-index: 10;
+        }
+
+        .whatsapp-float img {
+          animation: pulsar 2s ease-in infinite;
+        }
+
+        @keyframes pulsar {
+        0% {
+          transform: scale3d(1, 1, 1);
+        }
+        10%, 20% {
+          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+        }
+        30%, 50%, 70%, 90% {
+          transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        }
+        40%, 60%, 80% {
+          transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        }
+        100% {
+          transform: scale3d(1, 1, 1);
+        }
+      }
     </style>
 </head>
 <body>
     <header>
         <img src="assets/images/Logo cabeçalho.svg" alt="">
     </header>
+    <a class="whatsapp-float" href="https://api.whatsapp.com/message/IQPK3VSGQ3XJI1">
+      <img src="/assets/images/whatsapp-logo.png" alt="">
+    </a>
     <div class="background-cleaner-air"></div>
     <!-- Content principal -->
     <div class="content">
@@ -308,14 +345,13 @@
         <div class="main-header">
             <h1>ESTÁ PROCURANDO UMA EMPRESA QUE PRESTE SERVIÇOS DE AR-CONDICIONADO EM TELÊMACO BORBA?</h1>
             <p>Então encontrou... Nós podemos te ajudar!</p>
-            <a href="#" class="cta-button">SOLICITAR UMA VISITA DO TÉCNICO</a>
+            <a href="https://api.whatsapp.com/message/IQPK3VSGQ3XJI1" class="cta-button">ENTRAR EM CONTATO</a>
         </div>
 
         <!-- Conteúdo principal -->
         <div class="services">
             <!-- Descrição dos serviços -->
             <p>Mantenha seu ambiente sempre agradável e saudável com nossos serviços especializados de <strong>instalação, manutenção e limpeza de ar-condicionado em Telêmaco Borba</strong>. Com mais de 5 anos de experiência no mercado, nossa equipe de profissionais qualificados está pronta para atender às suas necessidades, garantindo eficiência e qualidade em cada atendimento.</p>
-            <h3>Nossos Serviços:</h3>
             <!-- Lista de serviços -->
             <ul>
                 <li><h2>Instalação de Ar-Condicionado:</h2> Realizamos a instalação de diversos tipos de ar-condicionado, como Split Hi-Wall, Cassete e Piso Teto, assegurando que seu equipamento funcione de maneira otimizada desde o primeiro dia.</li>
@@ -447,6 +483,34 @@
                   </div>
                 </div>
               </div>
+              <!-- Avaliação 8 -->
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-author">
+                    <img src="assets/images/profiles/hewerton lopes.png" alt="">
+                    <p>Hewerton Lopes</p>
+                  </div>
+                  <p>Excelente profissional, ótimo serviço e preço justo.</p>
+                  <div class="google-rating">
+                    <div class="review-rating">★★★★★</div>
+                    <img src="assets/icons/google-icone.webp">
+                  </div>
+                </div>
+              </div>
+              <!-- Avaliação 9 -->
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-author">
+                    <img src="assets/images/profiles/michel lemes.png" alt="">
+                    <p>Michel Lemes</p>
+                  </div>
+                  <p>Excelente os serviços!</p>
+                  <div class="google-rating">
+                    <div class="review-rating">★★★★★</div>
+                    <img src="assets/icons/google-icone.webp">
+                  </div>
+                </div>
+              </div>
             </div>
           
             <!-- Botões de navegação -->
@@ -459,12 +523,6 @@
           <div class="swiper">
             <h2>Siga nossas Redes Sociais</h2>
             <div class="swiper-wrapper">
-              <!-- Avaliação 1 -->
-              <div class="swiper-slide">
-                <a href="https://www.instagram.com/cleaner_air_tb/p/DD9gpf0x2Ox/">
-                  <img src="assets/images/instagram/i1.jpeg" alt="" width="330px">
-                </a>
-              </div>
               <!-- Avaliação 2 -->
               <div class="swiper-slide">
                 <a href="https://www.instagram.com/cleaner_air_tb/p/DDkErXbx_7o/">
@@ -515,7 +573,7 @@
     
                 <div class="contact-item">
                     <img src="assets/icons/whatsapp-icone.png" alt="WhatsApp">
-                    <span>(42) 99838-1221</span>
+                    <span>(42) 9967-4606</span>
                 </div>
     
                 <div class="contact-item">
@@ -532,31 +590,30 @@
               <img src="assets/images/Logo footer.png" alt="Imagem de suporte">
             </div>
           </div>
-          
-          <!-- Scripts do Swiper -->
-          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-          <script>
-            const swiper = new Swiper('.swiper', {
-              loop: true,
-              slidesPerView: 1, // Padrão: 1 avaliação visível
-              spaceBetween: 20, // Espaçamento entre avaliações
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-              autoplay: {
-                delay: 5000,
-              },
-              breakpoints: {
-                768: {
-                  slidesPerView: 2, // 2 avaliações em tablets
-                },
-                1024: {
-                  slidesPerView: 3, // 3 avaliações em notebooks e desktops
-                },
-              },
-            });
-          </script>
     </div>
+    <!-- Scripts do Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        slidesPerView: 1, // Padrão: 1 avaliação visível
+        spaceBetween: 20, // Espaçamento entre avaliações
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 5000,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2, // 2 avaliações em tablets
+          },
+          1024: {
+            slidesPerView: 3, // 3 avaliações em notebooks e desktops
+          },
+        },
+      });
+    </script>
 </body>
 </html>
