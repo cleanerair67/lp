@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://cleanerairtb.com/sitemap.xml
